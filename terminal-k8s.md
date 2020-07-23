@@ -1,13 +1,15 @@
 kubectl version
 
-    • Start Stop
+   #  Start Stop
         ◦ sudo microk8s start/stop/status
-    • Basic Gets
+   # Basic Gets
         ◦ get nodes
         ◦ get service
         ◦ get deployment
         ◦ get pods
-    • Modification
+   # Modification
         ◦ microk8s kubectl create -f infinispan.yaml
-    • Delete
+   # Delete
         ◦ microk8s kubectl delete service infinispan-server
+  # MISC
+  * kubectl create deployment
