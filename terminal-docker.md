@@ -16,6 +16,12 @@ sudo service docker status
 
 sudo service docker stop 
 
+# docker container
+docker container run -d [docker_image] // detached mode
+docker container run -it [docker_image] /bin/bash   // interactively
+docker container run -p 8080:80 [docker_image] // with port mapping
+docker container run --rm [docker_image] // remove it after run
+
 # Dockerfile for tomcat war deployment 
 
 File content 
