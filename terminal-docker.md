@@ -92,5 +92,5 @@ Show databases;
   * or from mssm tool - servername --> localhost,1433  serverType: DB Engine, Authentication: SQL Server Authentication
   * create database testdb;
   * CREATE TABLE Employee  (  EmployeeID int,  FirstName varchar(255),  LastName varchar(255)  );  
-  * INSERT INTO table_name (EmployeeID ,  FirstName , LastName)  VALUES (1, testName, TestLastName);  
+  * INSERT INTO dbo.EMPLOYEE (EmployeeID ,  FirstName , LastName)  VALUES (1, 'testName', 'TestLastName');  
   
