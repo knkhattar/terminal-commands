@@ -1,12 +1,7 @@
-# Docker Compose 
 
-Three parts 
+# Reference 
+https://docs.docker.com/engine/reference/commandline/docker/
 
-Services 
-
-Networks 
-
-Ports 
 
 # Basic Commands 
 
@@ -16,31 +11,40 @@ sudo service docker status
 
 sudo service docker stop 
 
+# Command Groups
+
+docker container *
+docker images *
+
+
 # docker container
 docker container run -d [docker_image] // detached mode
+
 docker container run -it [docker_image] /bin/bash   // interactively
+
 docker container run -p 8080:80 [docker_image] // with port mapping
+
 docker container run --rm [docker_image] // remove it after run
 
 # Dockerfile for tomcat war deployment 
 
-File content 
+  File content 
 
-FROM openjdk:11-jdk-slim 
+  FROM openjdk:11-jdk-slim 
 
-MAINTAINER knkhattar 
+  MAINTAINER knkhattar 
 
-COPY target/wartest.war /usr/local/tomcat/webapps/ 
+  COPY target/wartest.war /usr/local/tomcat/webapps/ 
 
-# Build Image 
+   ## Build Image 
 
-sudo docker image build -t knkhattar/mytomcatcontainer . 
+   sudo docker image build -t knkhattar/mytomcatcontainer . 
 
-# Run It 
+   ## Run It 
 
-sudo docker container run -it --publish 8081:8080 knkhattar/mytomcatcontainer 
+   sudo docker container run -it --publish 8081:8080 knkhattar/mytomcatcontainer 
 
-Check it on browser http://localhost:8080/ 
+   Check it on browser http://localhost:8080/ 
 
 # Docker Container 
 
@@ -49,6 +53,16 @@ Docker container ls
 Docker container stop mysql 
 
 Docker rm  
+
+# Docker Compose 
+
+Three parts 
+
+Services 
+
+Networks 
+
+Ports 
 
 # MySQL run 
 
