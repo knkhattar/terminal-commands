@@ -13,11 +13,15 @@ sudo service docker stop
 
 # Command Groups
 
-docker container *
-docker images *
+docker container --help
+docker images --help
 
 
 # docker container
+docker container ls //lists running containers
+
+docker container ls -a //lists all containers
+
 docker container run -d [docker_image] // detached mode
 
 docker container run -it [docker_image] /bin/bash   // interactively
@@ -25,6 +29,21 @@ docker container run -it [docker_image] /bin/bash   // interactively
 docker container run -p 8080:80 [docker_image] // with port mapping
 
 docker container run --rm [docker_image] // remove it after run
+
+docker container stop 
+
+# docker image
+
+docker image build -t [image tag name] .   //. is for current directory holding docker file
+
+docker image ls -a // for all images
+
+docker image pull
+
+docker image push
+
+docker image rm
+
 
 # Dockerfile for tomcat war deployment 
 
