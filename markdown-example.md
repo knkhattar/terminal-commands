@@ -40,3 +40,11 @@ An [example](http://example.com).
 > characters for blockquoting.
 
 Inline <abbr title="Hypertext Markup Language">HTML</abbr> is supported.
+
+Code block  
+
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
