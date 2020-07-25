@@ -135,7 +135,7 @@ tail // Prints last few lines in a file
 tail /var/log/myapp.log //prints last few lines of logfile  
 tail -1000 /var/log/myapp.log //prints 1000 last lines  
 
-
+# MISC
 
  
 
