@@ -25,23 +25,29 @@ Open Terminal : Ctrl + Alt + T
 * apt for debian packages (specific versions)
 * snap for cross distribution pacakges
 
-## Java
+**Java**
 
 sudo apt update 
 
 sudo apt install openjdk-8-jdk 
 
-## Eclipse 
+**Eclipse**
 
 sudo snap install --classic eclipse 
 
-## Maven 
+**Maven**
 
 sudo apt update 
 
 sudo apt install openjdk-8-jdk 
 
- 
+**dpkg**
+
+dpkg -L <packagename> : This command gives the location of files and directories crated as part of installed package   
+
+dpkg – L openjdk-8-jdk : files are installed in usr/lib and usr/share   
+
+dpkg – L apache2 : etc, lib, usr/lib, usr/sbin, var/logs   
 
 # User Management 
 
@@ -93,9 +99,6 @@ Software installations, execution
 
 ## Vi Editor Commands 
 
- 
-
-
 **Sample File Creation**
 
 Vi MyFirstFile 
@@ -104,19 +107,15 @@ I to insert mode
 
 Type content 
 
-:wq 
-
- Saving and Closing the file 
+:wq // for write and quit 
 
 Shift+zz - Save the file and quit 
 
-:w - Save the file but keep it open 
+:w - write but keep it open 
 
 :q - Quit without saving 
 
-:wq - Save the file and quit 
-
-## Moving within a file 
+**Moving within a file **
 
 k - Move cursor up 
 
@@ -130,9 +129,11 @@ l - Move cursor right
 
 ls -lh // Display filesize in human readable format (e.g. KB, MB etc.,) 
 
-Tail 
+tail [OPTION]... [FILE]...
 
-# Prints last few lines in a file 
+tail // Prints last few lines in a file  
+tail /var/log/myapp.log //prints last few lines of logfile  
+tail -1000 /var/log/myapp.log //prints 1000 last lines  
 
 
 
