@@ -1,23 +1,39 @@
 
 
 # OS Update or Upgrade 
+>> Sudo apt-get update  //Just updates the list   
+>> Sudo apt-get upgrade  //Actually installs the update   
 
-Sudo apt-get update  //Just updates the list   
-Sudo apt-get upgrade  //Actually installs the update   
+# System Info
 
-# Download Commands 
+Du //Prints amount of disk usage   
 
-Java Install 
+
+# Ubantu Shortcuts
+Lock Screen  : Super + L 
+
+Logout : Ctrl Alt Delete 
+
+Quit Application Ctrl+Q  
+
+Open Terminal : Ctrl + Alt + T 
+
+# Software Installation
+
+* apt for debian packages (specific versions)
+* snap for cross distribution pacakges
+
+## Java
 
 sudo apt update 
 
 sudo apt install openjdk-8-jdk 
 
-# Eclipse 
+## Eclipse 
 
 sudo snap install --classic eclipse 
 
-Maven 
+## Maven 
 
 sudo apt update 
 
@@ -119,9 +135,7 @@ Tail
 
 # Prints last few lines in a file 
 
-Du 
 
-Prints amount of disk usage 
 
  
 
