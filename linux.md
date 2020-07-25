@@ -7,6 +7,8 @@
 # System Info
 
 Du //Prints amount of disk usage   
+uname -a //prints system information check help for more info
+date //prints date 
 
 
 # Ubantu Shortcuts
@@ -51,13 +53,9 @@ passwd //Change passwd
 
 who //Lists logged in users 
 
-System Info 
 
-uname ľa //prints system information 
 
-date //prints date 
-
-Dir and File Navigation 
+# Dir and File Navigation 
 
 mkdir graphics 
 
@@ -85,19 +83,20 @@ ps <opt> kill <opt> <ID>
 
 Software installations, execution 
 
-# MISC 
+# File Creation/View etc
 
-du 
+## cat command
 
-Prints amount of disk usage 
+  cat >newfile.txt  //type content and press ctl + D  to save
+  cat newfile.txt //prints content  
+  cat -n newfile.txt //prints content with line no  
+
+## Vi Editor Commands 
 
  
 
-Vi Editor Commands 
 
- 
-
-# Sample File Creation 
+**Sample File Creation**
 
 Vi MyFirstFile 
 
@@ -117,7 +116,7 @@ Shift+zz - Save the file and quit
 
 :wq - Save the file and quit 
 
-# Moving within a file 
+## Moving within a file 
 
 k - Move cursor up 
 
