@@ -42,7 +42,9 @@ docker container run -it [docker_image] /bin/bash   // interactively
 
 docker container run -p 8080:80 [docker_image] // with port mapping
 
-docker container run --rm [docker_image] // remove it after run
+docker container run --rm [docker_image] // remove container(not image) after run
+
+docker container rm [container id or initial 4 chars of it] //removes container
 
 docker container stop [container id or 4 chars]
 
