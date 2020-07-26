@@ -101,7 +101,8 @@ Docker ps // to check
 
 docker exec -it mysql bash 
 
-bash-4.2# mysql -uroot –ppassword 
+bash-4.2# mysql -uroot –p   //this will ask for root password
+                            //from workbench root user might not work - some setting required in mysql
 
 CREATE USER 'user1'@'%' IDENTIFIED BY 'password1'; 
 
@@ -109,9 +110,9 @@ GRANT ALL PRIVILEGES ON * . * TO 'user1'@'%';
 
 Quit 
 
-Create database HSEARCH; 
+CREATE DATABASE HSEARCH; 
 
-Show databases; 
+SHOW DATABASES; 
 
 
 # MSSQL Docker Installation
