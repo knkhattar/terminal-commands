@@ -20,7 +20,7 @@ docker images --help
 
 # docker image
 
-docker image build -t [image tag name] .   //. is for current directory holding docker file
+docker image build -t [image tag name e.g name:latest] .   //. is for current directory holding docker file
 
 docker image ls -a // for all images
 
