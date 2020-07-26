@@ -50,7 +50,9 @@ docker container stop [container id or 4 chars]
 
 docker container start [container id of the stopped container]
 
-
+# logs
+sudo docker logs -f <CONTAINER ID>
+sudo docker logs <CONTAINER ID>
 
 
 # Dockerfile for tomcat war deployment 
@@ -114,7 +116,9 @@ Show databases;
 
 # MSSQL Docker Installation
   * docker pull mcr.microsoft.com/mssql/server:2017-latest
+  * test               mcr.microsoft.com/mssql/server:2017-latest-ubuntu // for ubantu
   * docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=myStrongPasword!123' -p 1433:1433 -d mcr.microsoft.com/mssql/server:2017-latest
+  * once created next time only start the container - docker container start containerId/name
   * docker exec -it <container_id|container_name> /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P myStrongPasword!123
   * or from mssm tool - servername --> localhost,1433  serverType: DB Engine, Authentication: SQL Server Authentication
   * create database testdb;
