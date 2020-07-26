@@ -1,3 +1,4 @@
+Refer https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 kubectl version
 
    #  Start Stop
