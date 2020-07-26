@@ -37,4 +37,13 @@ spec:
   selector:
     run: my-nginx
     
-    ````
+````
+
+# Deployment  
+kubectl apply -f filename.yml
+
+# Delete resources
+
+* kubectl delete deploy <deployment name>
+* kubectl delete service <service name>  
+
