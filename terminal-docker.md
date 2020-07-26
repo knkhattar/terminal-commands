@@ -119,3 +119,5 @@ Show databases;
   * CREATE TABLE Employee  (  EmployeeID int,  FirstName varchar(255),  LastName varchar(255)  );  
   * INSERT INTO dbo.EMPLOYEE (EmployeeID ,  FirstName , LastName)  VALUES (1, 'testName', 'TestLastName');  
   
+# Docker Compose
+docker-compose -v //prints version installed
