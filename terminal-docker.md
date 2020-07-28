@@ -126,9 +126,14 @@ SHOW DATABASES;
   #### SQLCMD 
   * create database test_db;
   * go - enter
+  * USE test_db
+  * GO
   * CREATE TABLE employee  (  employee_id int,  first_name varchar(255),  last_name varchar(255)  );  
   * INSERT INTO employee (employee_id ,  first_name , last_name)  VALUES (1, 'first_name1', 'last_name1');  
-  * INSERT INTO employee (employee_id ,  first_name , last_name)  VALUES (1, 'first_name2', 'last_name2');  
+  * INSERT INTO employee (employee_id ,  first_name , last_name)  VALUES (2, 'first_name2', 'last_name2');  
+  * ---
+  * select name from sys.databases; // LISTS ALL THE DATABASES
+  * SELECT * FROM  test_db.INFORMATION_SCHEMA.TABLES; //LISTS test_db tables
   
   #### DATA VOLUMES
   
