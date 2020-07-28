@@ -116,19 +116,23 @@ SHOW DATABASES;
 
 
 # MSSQL Docker Installation
+  #### PULL/RUN
   * docker pull mcr.microsoft.com/mssql/server:2017-latest
-  * test               mcr.microsoft.com/mssql/server:2017-latest-ubuntu // for ubantu
-  * docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=myStrongPasword!123' -p 1433:1433 -d mcr.microsoft.com/mssql/server:2017-latest
+  * docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=yourStrongPassword2020' -p 1433:1433 -d mcr.microsoft.com/mssql/server:2017-latest
   * once created next time only start the container - docker container start containerId/name
-  * docker exec -it <container_id|container_name> /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P myStrongPasword!123
+  #### Interactive
+  * docker exec -it <container_id|container_name> /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P yourStrongPassword2020
   * or from mssm tool - servername --> localhost,1433  serverType: DB Engine, Authentication: SQL Server Authentication
-  * create database testdb;
-  * CREATE TABLE Employee  (  EmployeeID int,  FirstName varchar(255),  LastName varchar(255)  );  
-  * INSERT INTO dbo.EMPLOYEE (EmployeeID ,  FirstName , LastName)  VALUES (1, 'testName', 'TestLastName');  
+  #### SQLCMD 
+  * create database test_db;
+  * go - enter
+  * CREATE TABLE employee  (  employee_id int,  first_name varchar(255),  last_name varchar(255)  );  
+  * INSERT INTO employee (employee_id ,  first_name , last_name)  VALUES (1, 'first_name1', 'last_name1');  
+  * INSERT INTO employee (employee_id ,  first_name , last_name)  VALUES (1, 'first_name2', 'last_name2');  
   
-  ## with data volumes
+  #### DATA VOLUMES
   
-  docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=<YourStrong!Passw0rd>" -p 1433:1433 -v <host directory>/data:/var/opt/mssql/data -v <host directory>/log:/var/opt/mssql/log -v <host directory>/secrets:/var/opt/mssql/secrets -d mcr.microsoft.com/mssql/server:2017-latest
+  docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=yourStrongPassword2020" -p 1433:1433 -v <host directory>/data:/var/opt/mssql/data -v <host directory>/log:/var/opt/mssql/log -v <host directory>/secrets:/var/opt/mssql/secrets -d mcr.microsoft.com/mssql/server:2017-latest
   
 # Docker Compose
 docker-compose -v //prints version installed
