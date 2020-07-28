@@ -22,6 +22,7 @@ kubectl version
    # Interactive
         * kubectl exec -it [pod-name] bash //get inside pod bash prompt
    # Delete
-        ◦ microk8s kubectl delete service infinispan-server
+        ◦ microk8s kubectl delete service [service name]
+        * microk8s kubectl delete deployment [deployment name]
   # MISC
   * kubectl create deployment
