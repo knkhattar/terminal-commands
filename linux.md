@@ -63,23 +63,25 @@ who //Lists logged in users
 
 # Dir and File Navigation 
 
-mkdir graphics 
+* find -name <*fileName*> // find file
 
-rmdir emptydir Remove directory (must be empty) 
+* mkdir graphics 
 
-cp file1 web-docs //Copy file into directory 
+* rmdir emptydir Remove directory (must be empty) 
 
-cp file1 file1.bak //Make backup of file1 
+* cp file1 web-docs //Copy file into directory 
 
-bash xyz.sh //runs the script 
+* cp file1 file1.bak //Make backup of file1 
 
-rm *.tmp //Remove all file 
+* bash xyz.sh //runs the script 
 
-mv old.html new.html Move or rename files 
+* rm *.tmp //Remove all file 
 
-tar -cf subdir.tar subdir //Create an archive called subdir.tar of a directory 
+* mv old.html new.html Move or rename files 
 
-tar -xvf subdir.tar //Extract files from an archive file 
+* tar -cf subdir.tar subdir //Create an archive called subdir.tar of a directory 
+
+* tar -xvf subdir.tar //Extract files from an archive file 
 
 grep <str><files> //e.g. grep "bad word" * - Find which files contain a certain word 
 
