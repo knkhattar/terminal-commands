@@ -1,4 +1,4 @@
-. Create Sample Project
+* Create Sample Project
  	. mvn archetype:generate -DgroupId=com.example  -DartifactId=my-first-webapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
   
 	  <build>
@@ -12,4 +12,5 @@
 			</plugins>
 	  </build>
   
- . mvn jetty:run
+ * mvn jetty:run
+ * mvn clean install -Denv=dev -DskipTests -Pprofile1 -rf :3rdProjectInMultimoduleProj  // rf - resume from
