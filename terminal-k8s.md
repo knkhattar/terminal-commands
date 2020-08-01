@@ -21,6 +21,10 @@ kubectl version
         * kubectl describe service <service name> // gives endpoints too
    # Interactive
         * kubectl exec -it [pod-name] bash //get inside pod bash prompt
+   # Debug
+         * kubectl logs [POD NAME]// MAY BE CONTAINER TOO also required
+         * kubectl logs --previous ${POD_NAME} // for crashed container
+         
    # Delete
         ◦ microk8s kubectl delete service [service name]
         * microk8s kubectl delete deployment [deployment name]
