@@ -23,6 +23,7 @@ kubectl version
         * kubectl exec -it [pod-name] bash //get inside pod bash prompt
    # Debug
          * kubectl logs [POD NAME]// MAY BE CONTAINER TOO also required
+         * kubectl logs -f [POD NAME] # streaming logs - press enter for recent activity - time in utc
          * kubectl logs --previous ${POD_NAME} // for crashed container
          
    # Delete
