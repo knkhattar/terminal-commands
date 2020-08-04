@@ -14,3 +14,6 @@
   
  * mvn jetty:run
  * mvn clean install -Denv=dev -DskipTests -Pprofile1 -rf :3rdProjectInMultimoduleProj  // rf - resume from
+ # mvn reactor 
+ * skip projects in reactor - use command below. pl is for project list - it skips submodule1 and 2
+ * mvn -pl "!submodule1,!submodule2" install
