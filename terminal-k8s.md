@@ -17,6 +17,7 @@ kubectl version
         ◦ get service
         ◦ get deployment
         ◦ get pods
+        * get rs // replica sets
         * get all  // imp - lists pods service deployment replicasets
         * kubectl describe service <service name> // gives endpoints too
    # Interactive
@@ -25,7 +26,8 @@ kubectl version
          * kubectl logs [POD NAME]// MAY BE CONTAINER TOO also required
          * kubectl logs -f [POD NAME] # streaming logs - press enter for recent activity - time in utc
          * kubectl logs --previous ${POD_NAME} // for crashed container
-         
+   # Replica Sets Scale    
+         * kubectl scale --replicas=3 rs/foo  //scale replica set name foo to 3
    # Delete
         ◦ microk8s kubectl delete service [service name]
         * microk8s kubectl delete deployment [deployment name]
