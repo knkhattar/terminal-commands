@@ -12,7 +12,7 @@
 			</plugins>
 	  </build>
   
- * mvn jetty:run
+ * mvn jetty:run -Djetty.http.port=8080
  * mvn clean install -Denv=dev -DskipTests -Pprofile1 -rf :3rdProjectInMultimoduleProj  // rf - resume from
  # mvn reactor 
  * skip projects in reactor - use command below. pl is for project list - it skips submodule1 and 2
