@@ -28,6 +28,7 @@ kubectl version
          * kubectl logs --previous ${POD_NAME} // for crashed container
    # Replica Sets Scale    
          * kubectl scale --replicas=3 rs/foo  //scale replica set name foo to 3
+         * kubectl scale deployments/kubernetes-bootcamp --replicas=4 //scale deployment to 4
    # Delete
         ◦ microk8s kubectl delete service [service name]
         * microk8s kubectl delete deployment [deployment name]
