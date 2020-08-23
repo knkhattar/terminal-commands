@@ -30,6 +30,8 @@ docker image push
 
 docker image rm
 
+docker image prune //Remove all dangling images. If -a is specified, will also remove all images not referenced by any container.
+
 # docker container
 
 docker container ls //lists running containers
