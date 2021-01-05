@@ -39,6 +39,9 @@ spec:
     
 ````
 
+# Service labels  
+Note : spec.selector field of the service should match the spec.template.metadata.labels of the pod created by the Deployment.
+
 # Deployment  
 kubectl apply -f filename.yml
 
