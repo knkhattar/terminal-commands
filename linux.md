@@ -7,14 +7,19 @@
 # System Info
 
 Du //Prints amount of disk usage   
+
 uname -a //prints system information check help for more info
+
 date //prints date 
 
 cat /etc/os-release // os info
+
 cat /etc/hostname // prints host name or pod name
 
 lscpu // prints cpu info
+
 cat /proc/cpuinfo //prints cpu info per processor
+
 nproc // prints no of cpu cores
 
 
