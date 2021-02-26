@@ -13,6 +13,11 @@ date //prints date
 cat /etc/os-release // os info
 cat /etc/hostname // prints host name or pod name
 
+lscpu // prints cpu info
+cat /proc/cpuinfo //prints cpu info per processor
+nproc // prints no of cpu cores
+
+
 
 # Ubantu Shortcuts
 Lock Screen  : Super + L 
