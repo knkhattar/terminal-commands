@@ -5,6 +5,10 @@ git clone https://github.com/accountName/repoName.git myFolderName //creates ins
 
 git config
 
+  >> git config --global user.name "xyz"
+ 
+  >> git config --global user.email "xyz@xyz.com"
+
 git commit
 
 git add
