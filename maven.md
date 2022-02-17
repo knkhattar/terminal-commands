@@ -17,3 +17,8 @@
  # mvn reactor 
  * skip projects in reactor - use command below. pl is for project list - it skips submodule1 and 2
  * mvn -pl "!submodule1,!submodule2" install
+
+# mvn deploy
+mvn deploy:deploy-file -Dfile=log4j-api-2.14.1.jar -DgroupId=com.example -DartifactId=log4j-api -Dversion=2.14.1 -Dpackaging=jar -DrepositoryId=documentum 
+-Durl=https://pkgs.dev.azure.com/youracc/az-devops-test/_packaging/yourfeed/maven/v1
+https://help.talend.com/r/en-US/Cloud/api-tester-examples/creating-maven-feed-in-azure-artifacts
