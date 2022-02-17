@@ -21,4 +21,6 @@
 # mvn deploy
 mvn deploy:deploy-file -Dfile=log4j-api-2.14.1.jar -DpomFile=log4j-api-2.14.3.pom -DgroupId=com.example -DartifactId=log4j-api -Dversion=2.14.1 -Dpackaging=jar -DrepositoryId=documentum 
 -Durl=https://pkgs.dev.azure.com/youracc/az-devops-test/_packaging/yourfeed/maven/v1
+
+
 https://help.talend.com/r/en-US/Cloud/api-tester-examples/creating-maven-feed-in-azure-artifacts
